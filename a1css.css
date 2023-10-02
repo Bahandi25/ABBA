@@ -1,0 +1,141 @@
+* {
+  font-family: Arial black, sans-serif;
+  box-sizing: border-box;}
+body {
+    margin:20;
+    padding: 0;
+    background: #e1b382 !important;
+}
+#title {
+  background-color: #2d545e;
+  padding: 10px 0px;
+    text-align: center;
+}
+.featured-cars {
+    text-align: center;
+    margin: 20px 0;
+}
+.contact-form {
+    text-align: center;
+    margin: 20px 0;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #E44C47;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+#carlist {
+  border-collapse: separate;
+  width: 100%;
+}
+.ftcars{
+  color: white;
+  text-align: center;
+}
+#carlist td, #carlist th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#carlist tr{
+  background-color: #f2f2f2;
+}
+
+#carlist tr:hover {background-color: #ddd;}
+
+#carlist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #74747C;
+  color: white;
+}
+footer {
+    background-color: #2d545e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+a {
+    color: #74747C;
+}
+a:visited {
+    color: #1f1f2e;
+}
+a:hover {
+    color: #844A74;
+}
+
+.wrapper {
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.contact {
+  border-radius: 10px;
+  background-color: #333;
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  border: 1px solid rgba(0,0,0,0.1);
+
+  .contact-heading,
+	.checkbox {
+    color:white;
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+}
+:root {
+  --gradient: linear-gradient(to left top, #ff0028 10%, #FF512F 90%) !important;
+}
+.card {
+  background: #111;
+  border: 1px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+.btn {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source:  var(--gradient) !important;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+.btn:hover, .btn:focus {
+      background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 5px solid #fff !important;
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
