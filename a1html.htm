@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABBA Store 2023</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="bdeteh.png">
     <link rel="stylesheet" href="a1css.css">
+                        <script src="animation.js"></script>
 </head>
 <section id="title">
     <div class="container-fluid">
@@ -15,8 +16,18 @@
       <div class="btn-group">
 <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" title="BUY OUR CAR NOW!"><a href="a1html.htm">ABBA Store</a></button>
       </div>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"> <div class="btn-group">       <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+        <ul class="navbar-nav ml-auto" id="navig">
+          <li class="nav-item">
+            <div class="container">
+              <div id="timer-container">
+                <div id="timer">00:00</div>
+                <button id="start-btn" class="btn btn-primary">Start Timer</button>
+              </div>
+            </div>
+</li>
+<script src="timer.js"></script>
+            <li class="nav-item"> <div class="btn-group">
+              <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Cars</span>
                     </button>
                     <ul class="dropdown-menu">
@@ -24,7 +35,7 @@
                       <li><a class="dropdown-item" href="#">Used</a></li>
                       <li><a class="dropdown-item" href="#">Pricing</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Secrets</a></li>
+                      <li><a class="dropdown-item" href="todo.htm">To-Do</a></li>
                     </ul></div></li>
             <li class="nav-item"><button type="button" class="btn btn-warning">Gallery<span class="badge badge-danger">8</span></button></li>
             <li class="nav-item"><button type="button" class="btn btn-warning">Contact</button></li>
@@ -41,44 +52,46 @@
   </div>
 </div>
     <section class="featured-cars">
-<div class="container mx-auto mt-4">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-  <img src="https://astps-photos-kl.kcdn.kz/webp/e3/e3107f9e-1690-4957-ad5b-981aaf67a41c/1-1200x752.webp" class="card-img-top" alt="Jaguar">
-  <div class="card-body">
-    <h5 class="card-title">Jaguar E-Pace</h5>
-        <h6 class="card-subtitle mb-2 text-muted">2018</h6>
-    <p class="card-text">16.500.000 T</p>
-       <a href="jaguar.htm" class="btn mr-2"><i class="fas fa-link"></i> Learn more</a>
-    <a href="payment.htm" class="btn "><i class="fab fa-github"></i> Buy</a>
-  </div>
-  </div>
+
+
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://astps-photos-kl.kcdn.kz/webp/e3/e3107f9e-1690-4957-ad5b-981aaf67a41c/1-1200x752.webp" class="card-img-top cardImage">
+          <div class="card-body">
+            <h5 class="card-title">Jaguar E-Pace</h5>
+            <p class="card-text">16.500.000 T</p>
+            <a href="jaguar.htm" class="btn mr-2"><i class="fas fa-link"></i> Learn more</a>
+         <a href="payment.htm" class="btn "><i class="fab fa-github"></i> Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://pvlkt-photos-kl.kcdn.kz/webp/86/8672edca-876e-4f7f-add9-99fba7e1e4c5/1-full.webp" class="card-img-top cardImage">
+          <div class="card-body">
+            <h5 class="card-title">Mitsubishi Space Wagon</h5>
+            <p class="card-text">1.240.000 T</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://astps-photos-kl.kcdn.kz/webp/8e/8e873917-cac1-4da0-9fd2-9953d870f9e9/1-1200x752.webp" class="card-img-top cardImage">
+          <div class="card-body">
+            <h5 class="card-title">Renault Logan</h5>
+            <p class="card-text">2.520.000 T</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
     </div>
-       <div class="col-md-4">
-<div class="card" style="width: 18rem;">
-  <img src="https://pvlkt-photos-kl.kcdn.kz/webp/86/8672edca-876e-4f7f-add9-99fba7e1e4c5/1-full.webp" class="card-img-top" alt="Mitsubishi">
-  <div class="card-body">
-    <h5 class="card-title">Mitsubishi Space Wagon</h5>
-        <h6 class="card-subtitle mb-2 text-muted">1993</h6>
-    <p class="card-text">1.240.000 T</p>
-    <a href="#" class="btn  mr-2"><i class="fas fa-link"></i> Learn more</a>
-    <a href="payment.htm" class="btn"><i class="fab fa-github"></i> Buy</a>
-  </div>
-  </div>
-    </div>
-          <div class="col-md-4">
-<div class="card" style="width: 18rem;">
-  <img src="https://astps-photos-kl.kcdn.kz/webp/8e/8e873917-cac1-4da0-9fd2-9953d870f9e9/1-1200x752.webp" class="card-img-top" alt="Renault">
-  <div class="card-body">
-    <h5 class="card-title">Renault Logan</h5>
-        <h6 class="card-subtitle mb-2 text-muted">2014</h6>
-    <p class="card-text">2.520.000 </p>
-    <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Learn more</a>
-    <a href="payment.htm" class="btn "><i class="fab fa-github"></i> Buy</a>
-  </div>
-  </div>
-  </div>
+
+
+
+    <script src="animation.js"></script>
+
     </section>
     <table class="table-secondary" id="carlist">
       <h2 class="ftcars">Featured Cars</h2>
@@ -143,19 +156,19 @@
       </div>
         <div class="wrapper">
           <form class="contact">
-            <div>
-        <div class="container">
+
             <div class="intro">
                 <h2 class="text-center ftcars">We will call you</h2>
                 <p class="text-center ftcars">Leave your number here, and we'll call you as soon as possible.</p>
             </div>
-            <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="number" name="number" placeholder="Your Number"></div>
-                <div class="form-group"><button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit </button></div>
-            </form>
-        </div>
-    </div>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <form class="form-inline">
+              <div class="form-group">
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                          <div class="invalid-feedback">Please enter a valid email.</div>
+                      </div>
+                <div class="form-group">
+    <button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button></div></form>
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -178,9 +191,32 @@
           </form>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="formvalid.js"></script>
+    <div id="panel" class="panel-container">
+          <strong>How satisfied are you with our <br /> customer support performance?</strong>
+          <div class="ratings-container">
+            <div class="rating">
+              <small>Unhappy</small>
+            </div>
+
+            <div class="rating">
+              <small>Neutral</small>
+            </div>
+
+            <div class="rating active">
+              <small>Satisfied</small>
+            </div>
+          </div>
+          <button class="btn" id="send">Send Review</button>
+        </div>
+    <script src="feedback.js"></script>
     <br>
     <footer>
         <p><strong>&copy; ABBA Store 2023</strong></p>
+
     </footer>
-</body>
-</html>
+    </body>
+    </html>
