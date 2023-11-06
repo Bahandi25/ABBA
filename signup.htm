@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Sign up</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" required>
+        <small class="text-danger" id="usernameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" required>
+        <small class="text-danger" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" required>
+        <small class="text-danger" id="passwordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" class="form-control" id="confirmPassword" required>
+        <small class="text-danger" id="confirmPasswordError"></small>
+      </div>
+
+      <button type="button" class="btn btn-primary" id="registerBtn" disabled onclick="registerUser()">Register</button>
+      <p id="registrationMessage"></p>
+    </form>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>
