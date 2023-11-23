@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function driveCar() {
         if (isMoving) {
             car.style.left = '100%';
-            carSound.play(); // Play the car sound
+            carSound.play();
             setTimeout(() => {
                 car.style.left = '0';
                 driveCar();
-            }, 2000); // Adjust the duration as needed
+            }, 1000);
         }
     }
 

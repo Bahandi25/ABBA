@@ -54,74 +54,55 @@
     </div>
   </div>
 
-<div class="col-md-12">
-        <form class="row g-2">
-          <div class="col-md-10">
-            <label for="taskForm" class="visually-hidden">Task</label>
-            <input class="form-control" id="taskInput" placeholder="Add task">
-          </div>
-          <div class="col-auto">
-            <button type="button" class="btn btn-warning mb-3" onclick="addTask()">Add task</button>
-          </div>
-        </form>
-
-        <ul class="list-group" id="taskList">
-
-        </ul>
-      </div>
-<script src="todo.js"></script>
-
-<section>
-  <div class="container" id="stepform">
-   <form>
-     <h1>What car you want to buy?</h1>
-    <div class="step step-1 active">
-     <div class="form-group">
-      <label for="firstName">Brand</label>
-      <input type="text" id="firstName" name="first-name">
-     </div>
-     <div class="form-group">
-      <label for="lastName">Model</label>
-      <input type="text" id="lastName" name="last-name">
-     </div>
-     <div class="form-group">
-      <label for="nickName">Generation</label>
-      <input type="text" id="nickName" name="nick-name">
-     </div>
-     <button type="button" class="next-btn">Next</button>
-    </div>
-    <div class="step step-2">
-     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email">
-     </div>
-     <div class="form-group">
-      <label for="phone">Phone</label>
-      <input type="number" id="phone" name="phone-number">
-     </div>
-     <button type="button" class="previous-btn">Prev</button>
-     <button type="button" class="next-btn">Next</button>
-    </div>
-    <div class="step step-3">
-     <div class="form-group">
-      <label for="country">Your name</label>
-      <input type="text" id="country" name="country">
-     </div>
-     <div class="form-group">
-      <label for="city">Surname</label>
-      <input type="text" id="city" name="city">
-     </div>
-     <div class="form-group">
-      <label for="postCode">City</label>
-      <input type="text" id="postCode" name="post-code">
-     </div>
-     <button type="button" class="previous-btn">Prev</button>
-     <button type="submit" class="submit-btn">Submit</button>
-    </div>
-   </form>
+<div class="container1">
+    <h1>Car Quiz</h1>
+    <div id="quiz"></div>
+    <div id="result" class="result"></div>
+    <button id="submit" class="button">Submit</button>
+    <button id="retry" class="button hide">Retry</button>
+    <button id="showAnswer" class="button hide">Show Answer</button>
   </div>
-  <script src="stepform.js"></script>
- </section>
+<script src="quiz.js"></script>
+
+<section class="contact-form">
+
+    <div class="wrapper">
+      <form class="contact">
+
+        <div class="intro">
+            <h2 class="text-center ftcars">We will call you</h2>
+            <p class="text-center ftcars">Leave your number here, and we'll call you as soon as possible.</p>
+        </div>
+        <form class="form-inline">
+          <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+            <div class="form-group">
+<button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button></div></form>
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Thank you!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>We'll call you</p>
+              </div>
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Hi</span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+</section>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
